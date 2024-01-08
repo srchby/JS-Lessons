@@ -24,4 +24,4 @@ button1.onclick = function() {
     document.querySelector('#clicked').innerText = `You have clicked ${score} times`
 }
 
-console.log(typeof button)
+//console.log(typeof button)
