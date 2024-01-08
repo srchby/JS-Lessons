@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background-image: url('https://e0.pxfuel.com/wallpapers/52/170/desktop-wallpaper-blame-movie-anime.jpg');
+}
+
+* {
+    font-size: 150%;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-text-stroke: 1px #000;
+    color: #fff;
+}
+
+button{
+    margin-bottom: 25px;
+    display: block;
+}
