@@ -5,18 +5,45 @@ body{
 }
 
 * {
-    font-size: 150%;
+    font-size: 100%;
     font-family: 'Ubuntu', sans-serif;
-    -webkit-text-stroke: 1px #000;
-    color: #fff;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
 }
 
 button{
-    margin-bottom: 25px;
     display: flex;  
     justify-content: center;  
     align-items: center; 
-    margin: auto; 
+    color: #636363;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+
+}
+
+header {
+    background: #ccc;
+    margin-bottom: 50px;
+    border-radius: 0 0 25px 25px;
+}   
+
+.container {
+    background: #ccc;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    padding: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div {
+    padding: 10px;
 }

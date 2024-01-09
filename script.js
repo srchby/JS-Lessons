@@ -1,7 +1,8 @@
-const button = document.getElementById('btn')
-const button1 = document.getElementById('btn1')
-const clicks = document.getElementById('clicks')
-const clicked = document.getElementById('clicked')
+const buttons = document.querySelector('.btn')
+const button = document.querySelector('#btn1')
+const button1 = document.querySelector('#btn2')
+const clicks = document.querySelector('#clicks')
+const clicked = document.querySelector('#clicked')
 
 //let year = 2024
 let score = 0
@@ -12,15 +13,19 @@ let score = 0
 //console.log('hello world');
 //console.log(year)
 
-button.addEventListener('click', () => (
+button1.addEventListener('click', () => (
     window.open('https://www.youtube.com/watch?v=hdI2bqOjy3c')
 ))
 
 
-button1.onclick = function() {
+button.onclick = function() {
     score++
-    document.querySelector('#clicks').innerText = score
     document.querySelector('#clicked').innerText = `You have clicked ${score} times`
 }
 
 //console.log(typeof button)
+
+//.forEach
+//.remove
+//buttons.remove()
+//buttons.lastElementChild.textContent = 'test'
