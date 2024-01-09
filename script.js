@@ -19,7 +19,6 @@ button.addEventListener('click', () => (
 
 button1.onclick = function() {
     score++
-    console.log(score)
     document.querySelector('#clicks').innerText = score
     document.querySelector('#clicked').innerText = `You have clicked ${score} times`
 }

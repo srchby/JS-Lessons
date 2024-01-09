@@ -9,9 +9,14 @@ body{
     font-family: 'Ubuntu', sans-serif;
     -webkit-text-stroke: 1px #000;
     color: #fff;
+    text-align: center;
+    overflow: hidden;
 }
 
 button{
     margin-bottom: 25px;
-    display: block;
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+    margin: auto; 
 }
