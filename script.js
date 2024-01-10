@@ -6,7 +6,8 @@ const clicked = document.querySelector('#clicked');
 const body = document.getElementsByTagName('body')[0];
 const myForm = document.querySelector('#my-form');
 const text = document.querySelector('#text');
-const warn = document.querySelector('.warn')
+const warn = document.querySelector('.warn');
+const items = document.querySelector('.items');
 
 //let year = 2024
 let score = 0
@@ -67,5 +68,11 @@ function onSubmit(e) {
     }
     else {
         console.log('sucess')
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${text.value}`));
+        items.appendChild(li);
+
+
+        text.value = '';
     }
 }
