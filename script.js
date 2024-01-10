@@ -1,8 +1,12 @@
-const buttons = document.querySelector('.btn')
-const button = document.querySelector('#btn1')
-const button1 = document.querySelector('#btn2')
-const clicks = document.querySelector('#clicks')
-const clicked = document.querySelector('#clicked')
+const button = document.querySelector('#btn1');
+const button1 = document.querySelector('#btn2');
+const button2 = document.querySelector('#btn3');
+const clicks = document.querySelector('#clicks');
+const clicked = document.querySelector('#clicked');
+const body = document.getElementsByTagName('body')[0];
+const myForm = document.querySelector('#my-form');
+const text = document.querySelector('#text');
+const warn = document.querySelector('.warn')
 
 //let year = 2024
 let score = 0
@@ -18,7 +22,7 @@ button1.addEventListener('click', () => (
 ))
 
 
-button.onclick = function() {
+button.onclick = function () {
     score++
     document.querySelector('#clicked').innerText = `You have clicked ${score} times`
 }
@@ -29,3 +33,39 @@ button.onclick = function() {
 //.remove
 //buttons.remove()
 //buttons.lastElementChild.textContent = 'test'
+
+button2.onclick = function () {
+    let isDefault = true;
+    if (isDefault) {
+        body.style.backgroundImage = 'url(https://i.redd.it/pcrhs6ph4am61.png)';
+        isDefault = false;
+    } else {
+        body.style.backgroundImage = ''; // Removing inline background set by JavaScript, reverting to CSS default
+        isDefault = true;
+    }
+}
+
+/*
+button2.addEventListener('click', (e) => {
+    console.log('clicked')
+});
+*/
+
+//preventDefault()
+//.target   .className  .id
+//classList .add
+//mouseover mouseout
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+    e.preventDefault();
+
+    if (text.value === '') {
+        warn.innerHTML = 'You gotta say something'
+        setTimeout(() => warn.remove(), 3000);
+    }
+    else {
+        console.log('sucess')
+    }
+}
